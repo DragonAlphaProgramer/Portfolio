@@ -35,12 +35,12 @@ public class kosci extends javax.swing.JFrame {
      */
     public kosci() {
         boolean prawidlowosc = false;
-        szesc = new ImageIcon(this.getClass().getResource("6.png"));
-        piec = new ImageIcon(this.getClass().getResource("5.png"));
-        cztery = new ImageIcon(this.getClass().getResource("4.png"));
-        trzy = new ImageIcon(this.getClass().getResource("3.png"));
-        dwa = new ImageIcon(this.getClass().getResource("2.png"));
-        jeden = new ImageIcon(this.getClass().getResource("1.png"));
+        szesc = new ImageIcon(this.getClass().getResource("k6.png"));
+        piec = new ImageIcon(this.getClass().getResource("k5.png"));
+        cztery = new ImageIcon(this.getClass().getResource("k4.png"));
+        trzy = new ImageIcon(this.getClass().getResource("k3.png"));
+        dwa = new ImageIcon(this.getClass().getResource("k2.png"));
+        jeden = new ImageIcon(this.getClass().getResource("k1.png"));
         initComponents();
         Object[] opcje = {gracz2, gracz3, gracz4};
         do {
@@ -813,46 +813,51 @@ public class kosci extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void kosc2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kosc2ActionPerformed
+         if(kosc2.getIcon()!=null){
         if (trzymaj2 == true) {
             trzymaj2 = false;
             kosc2.setBorder(null);
         } else {
             trzymaj2 = true;
             kosc2.setBorder(new LineBorder(Color.GREEN, 4));
-        }
+        }}
     }//GEN-LAST:event_kosc2ActionPerformed
 
     private void kosc3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kosc3ActionPerformed
+         if(kosc3.getIcon()!=null){
         if (trzymaj3 == true) {
             trzymaj3 = false;
             kosc3.setBorder(null);
         } else {
             trzymaj3 = true;
             kosc3.setBorder(new LineBorder(Color.GREEN, 4));
-        }
+        }}
     }//GEN-LAST:event_kosc3ActionPerformed
 
     private void kosc4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kosc4ActionPerformed
+         if(kosc4.getIcon()!=null){
         if (trzymaj4 == true) {
             trzymaj4 = false;
             kosc4.setBorder(null);
         } else {
             trzymaj4 = true;
             kosc4.setBorder(new LineBorder(Color.GREEN, 4));
-        }
+        }}
     }//GEN-LAST:event_kosc4ActionPerformed
 
     private void kosc5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kosc5ActionPerformed
+         if(kosc5.getIcon()!=null){
         if (trzymaj5 == true) {
             trzymaj5 = false;
             kosc5.setBorder(null);
         } else {
             trzymaj5 = true;
             kosc5.setBorder(new LineBorder(Color.GREEN, 4));
-        }
+        }}
     }//GEN-LAST:event_kosc5ActionPerformed
 
     private void kosc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kosc1ActionPerformed
+        if(kosc1.getIcon()!=null){
         if (trzymaj1 == true) {
             trzymaj1 = false;
             kosc1.setBorder(null);
@@ -860,6 +865,7 @@ public class kosci extends javax.swing.JFrame {
             trzymaj1 = true;
             kosc1.setBorder(new LineBorder(Color.GREEN, 4));
         }
+    }
     }//GEN-LAST:event_kosc1ActionPerformed
 
     private void rzucajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rzucajActionPerformed
